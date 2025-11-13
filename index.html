@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Online Gratis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⏰ Alarm Online Gratis</h1>
+            <p>Bisa diakses siapa saja dan di mana saja</p>
+        </header>
+
+        <main>
+            <div class="alarm-container">
+                <!-- Display Waktu Sekarang -->
+                <div class="current-time">
+                    <h2>Waktu Sekarang:</h2>
+                    <div id="currentTime" class="time-display">00:00:00</div>
+                </div>
+
+                <!-- Input Alarm -->
+                <div class="alarm-input">
+                    <h2>Set Alarm</h2>
+                    <div class="input-group">
+                        <input type="time" id="alarmTime" class="time-input">
+                        <button id="setAlarm" class="btn set-btn">Set Alarm</button>
+                        <button id="stopAlarm" class="btn stop-btn" disabled>Stop Alarm</button>
+                    </div>
+                </div>
+
+                <!-- Daftar Alarm -->
+                <div class="alarm-list">
+                    <h2>Alarm Aktif</h2>
+                    <div id="alarms"></div>
+                </div>
+
+                <!-- Status -->
+                <div id="status" class="status"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Alarm Online Gratis - Free untuk semua</p>
+        </footer>
+    </div>
+
+    <!-- Audio untuk alarm -->
+    <audio id="alarmSound" loop>
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-digital-clock-beep-989.mp3" type="audio/mpeg">
+        Browser Anda tidak support audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
